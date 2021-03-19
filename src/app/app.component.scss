@@ -1,0 +1,25 @@
+.lnkcontainer {
+    padding: 10px;
+    border: 1px solid lightgray;
+  }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+
+    li {
+      padding: 1em;
+    }
+
+    li a {
+      padding: 1em;
+      background: lightgray;
+      text-decoration: none;
+
+      &:hover {
+        background: lightgreen;
+      }
+    }
+  }

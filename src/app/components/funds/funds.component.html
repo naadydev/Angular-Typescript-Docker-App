@@ -1,0 +1,11 @@
+<h1>Funds List</h1>
+
+<h1 *ngIf="loading">Loading ....</h1>
+
+<ul *ngIf="funds">
+  <li *ngFor="let fund of funds">
+    <p><b>Title:</b>{{ fund.title | uppercase }}</p>
+    <p><b>Required:</b>{{ fund.investmentRequired }}</p>
+    <button type="button" (click)="openModalWithComponent(fund)">Invest</button>
+  </li>
+</ul>
